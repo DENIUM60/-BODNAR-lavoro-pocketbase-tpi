@@ -71,14 +71,14 @@ async function loadBorders() {
 
 //cose visive
 
-// A. Pannello con filtri e tabella
+// Pannello con filtri e tabella
 const InfoControl = L.Control.extend({
   options: { position: 'topleft' },
   onAdd: function() {
     const div = L.DomUtil.create('div', 'custom-control');
     L.DomEvent.disableClickPropagation(div);
     div.innerHTML = `
-      <h3>🌍 Monitoraggio Sismico</h3>
+      <h3>Monitoraggio Sismico</h3>
       <div id="status" style="color:var(--success); margin-bottom:5px;">In attesa...</div>
       
       <label>Periodo:</label>
@@ -102,7 +102,7 @@ const InfoControl = L.Control.extend({
   }
 });
 
-// B. Bottone Tema
+// Bottone Tema
 const ThemeControl = L.Control.extend({
   options: { position: 'topright' },
   onAdd: function() {
@@ -116,7 +116,7 @@ const ThemeControl = L.Control.extend({
   }
 });
 
-// C. Legenda
+// Legenda
 const LegendControl = L.Control.extend({
   options: { position: 'bottomleft' },
   onAdd: function() {
@@ -136,7 +136,7 @@ map.addControl(new InfoControl());
 map.addControl(new ThemeControl());
 map.addControl(new LegendControl());
 
-// --- LOGICA FUNZIONALE ---
+// logica
 
 function toggleTheme() {
   const btn = document.getElementById('themeBtn');
@@ -149,7 +149,7 @@ function toggleTheme() {
     btn.innerHTML = 'Chiaro';
     state.layers.base.setUrl(TILES.DARK);
     
-    // Cambia colore confini in BIANCO/GRIGIO CHIARO per visibilità
+    // contrasto confini
     if(state.layers.borders) {
         state.layers.borders.setStyle({ color: '#cccccc', weight: 1 });
     }
@@ -189,7 +189,7 @@ async function fetchData() {
   try {
     const url = URL_MAP[state.days];
     const res = await fetch(url);
-    if (!res.ok) throw new Error('Network err');
+    if (!res.ok) throw new Error('errore');
     
     const data = await res.json();
     const features = data.features || [];
@@ -233,7 +233,7 @@ async function fetchData() {
   }
 }
 
-// --- AVVIO ---
+// AVVIO
 document.getElementById('daysInput').addEventListener('change', (e) => { state.days = parseInt(e.target.value); fetchData(); });
 document.getElementById('magInput').addEventListener('input', (e) => { state.minMag = parseFloat(e.target.value) || 0; fetchData(); });
 

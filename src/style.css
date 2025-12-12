@@ -22,7 +22,7 @@
 body { margin: 0; padding: 0; font-family: sans-serif; }
 #map { width: 100vw; height: 100vh; }
 
-/* PANNELLI CUSTOM */
+/* PANNELLO */
 .custom-control {
   background: var(--panel-bg);
   color: var(--text-color);
@@ -55,6 +55,6 @@ body { margin: 0; padding: 0; font-family: sans-serif; }
 .quake-table { width: 100%; border-collapse: collapse; margin-top: 5px; font-size: 11px; }
 .quake-table th, .quake-table td { text-align: left; padding: 3px 0; border-bottom: 1px solid var(--border-color); }
 
-/* OVERRIDE LEAFLET DARK MODE */
+/* DARK MODE */
 .dark-theme .leaflet-control-zoom a { background-color: var(--panel-bg) !important; color: var(--text-color) !important; border-color: var(--border-color) !important; }
 .dark-theme .leaflet-bar { border-color: var(--border-color) !important; }
