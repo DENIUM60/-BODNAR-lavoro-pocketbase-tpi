@@ -33,6 +33,6 @@ L'applicazione gestisce tre layer principali e tre controlli UI personalizzati:
 
 Mentre l'interfaccia è strutturata così:
 
-**InfoControl** In Alto Sinistra sono presenti i filtri di Magnitudo/Periodo e la tabella dei dati. 
-**ThemeControl**  Alto Destra ci sta il bottone per il toggle del tema Chiaro/Scuro. 
-**LegendControl** Basso Sinistra viene siegata, tramite la legenda, la relazione tra colore/dimensione dei marker e magnitudo. 
+**InfoControl** In alto a sinistra sono presenti i filtri di Magnitudo/Periodo e la tabella dei dati. 
+**ThemeControl**  In alto a destra ci sta il bottone per il toggle del tema Chiaro/Scuro. 
+**LegendControl** In basso a sinistra viene siegata, tramite la legenda, la relazione tra colore/dimensione dei marker e magnitudo. 
