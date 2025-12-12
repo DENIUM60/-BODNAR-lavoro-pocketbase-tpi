@@ -1,0 +1,23 @@
+{
+  "name": "progetto-leaflet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",        
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "pocketbase": "^0.21.3"
+  },
+  "devDependencies": {
+    "vite": "^5.0.10"
+  }
+}
