@@ -27,12 +27,12 @@ Il file JavaScript principale che gestisce la logica della mappa.
 
 L'applicazione gestisce tre layer principali e tre controlli UI personalizzati:
 
-**Layer Base**  Sfondo della mappa (OpenStreetMap / CartoDB Dark). 
-**Layer Dati** Gruppo dinamico contenente i cerchi che rappresentano i terremoti. 
-**Layer Confini** Layer GeoJSON dei confini globali, utilizzato per migliorare la leggibilità. 
+* **Layer Base**  Sfondo della mappa (OpenStreetMap / CartoDB Dark). 
+* **Layer Dati** Gruppo dinamico contenente i cerchi che rappresentano i terremoti. 
+* **Layer Confini** Layer GeoJSON dei confini globali, utilizzato per migliorare la leggibilità. 
 
 Mentre l'interfaccia è strutturata così:
 
-**InfoControl** In alto a sinistra sono presenti i filtri di Magnitudo/Periodo e la tabella dei dati. 
-**ThemeControl**  In alto a destra ci sta il bottone per il toggle del tema Chiaro/Scuro. 
-**LegendControl** In basso a sinistra viene siegata, tramite la legenda, la relazione tra colore/dimensione dei marker e magnitudo. 
+* **InfoControl** In alto a sinistra sono presenti i filtri di Magnitudo/Periodo e la tabella dei dati. 
+* **ThemeControl**  In alto a destra ci sta il bottone per il toggle del tema Chiaro/Scuro. 
+* **LegendControl** In basso a sinistra viene siegata, tramite la legenda, la relazione tra colore/dimensione dei marker e magnitudo. 
